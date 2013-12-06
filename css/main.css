@@ -201,7 +201,8 @@ p {
     font-style: normal;
     font-size: 22px;
     line-height: 1.45;
-    -webkit-backface-visibility: hidden; /* applied to parent as well, to stop iPad flickering*/
+    /* TODO: figure out why this broke in production but not in demo:
+    /*-webkit-backface-visibility: hidden; /* applied to parent as well, to stop iPad flickering*/
 }
 
 .fn {
