@@ -25,7 +25,6 @@
         <header>
             <div class="wrap">
                 <a href="#" class="btn" id="citation-toggle">Hide Notes</a>
-                <a href="#" class="btn" id="auto-toggle">Auto Open Notes</a>
                 <a href="mailto: amanda.n.krauss@gmail.com, jess.l.miner@gmail.com?subject=Women%20In%20Congress%20Play" class="btn">Contact us!</a>
             </div>
 
@@ -3355,21 +3354,6 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
         <script src="js/annotate.js"></script>
-        <script>
-            $(document).footnote();
-        </script>
-        <script src="js/jquery-xscrolly.js"></script>
-        <script>
-            $('.fn').xscrolly({
-                throttle: 0,
-                offset: 250,
-                change: function($el) {
-                    if ($(document.documentElement).hasClass('autonote-on') && !$(document.documentElement).is('.notes-hidden') ) {
-                        $el.click();
-                    }
-                },
-            });
-        </script>
         <script>
             //Fixes the orientation re-size bug
             $(document).ready(function() {

@@ -96,16 +96,6 @@
             this.is_note_open = false;
             $doc.removeClass('note-on');
         },
-        autoToggle: function() {
-            $('#auto-toggle').on('click.' + pluginName, function (e) {
-                this.note_is_open = !this.note_is_open;
-                e.preventDefault();
-                $doc.toggleClass('autonote-on');
-                $('#auto-toggle').text(
-                    this.note_is_open ? 'Turn AutoOpen Off' : 'Auto Open Notes'
-                );
-            });
-        },
         citeToggle: function() {
             var self = this;
             $('#citation-toggle').on('click.' + pluginName, function (e) {
