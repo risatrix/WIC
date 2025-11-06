@@ -96,17 +96,6 @@
             this.is_note_open = false;
             $doc.removeClass('note-on');
         },
-        citeToggle: function() {
-            var self = this;
-            $('#citation-toggle').on('click.' + pluginName, function (e) {
-                e.preventDefault();
-                $doc.toggleClass('notes-hidden');
-                $('.fn').toggleClass('visuallyhidden').removeClass('active-note');
-                 $('#citation-toggle').text(
-                    $doc.hasClass('notes-hidden') ? 'Show Notes' : 'Hide Notes'
-                );
-                self.closeNotes(e);
-            });
         }    
     };
 
