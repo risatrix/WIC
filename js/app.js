@@ -21,7 +21,6 @@ toggles.forEach((element, index) => {
 function toggleNote(e) {
 	e.preventDefault();
 	index = Number(e.target.text)-1;
-	// openNote(index);
 	notes[index].classList.toggle('active');
 	notes[index].classList.toggle('visible');
 }

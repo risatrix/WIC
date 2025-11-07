@@ -24,14 +24,14 @@
     right: 0;
 }
 
-/* undoes two key selectors in keeping something vidsually hidden */
+/* undoes two key selectors in keeping something visually hidden */
 .internote.active, .internote.visible {
     position: static;
     height: auto;
 }
 
 /* sets the stage for a transform */
-.csstransforms3d.csstransitions .internote {
+.internote {
     right: 0; 
     -webkit-transform: translate3d(100%, 0, 0);
     -moz-transform: translate3d(100%, 0, 0);
@@ -50,7 +50,7 @@
 	}
 
 /* moves note into view, with transform */
-.csstransforms3d.csstransitions.note-on .internote.active{
+.internote.active {
     -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
     -moz-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
     -ms-transform: translate3d(0%, 0, 0) scale3d(1, 1, 1);
