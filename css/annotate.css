@@ -13,7 +13,7 @@
     padding: 0; 
     border: 0; 
     height: 0;
-    /* sets the stage for a transform */
+    /* sets the stage for animating transforms */
     transition: all 400ms ease-in;
     /* sets initial position via transform */
     transform: translate3d(200%, 0, 0);
@@ -23,7 +23,7 @@
 .internote.active {
     /* undoes selectors that keeps something visually hidden, possibly */
     height: auto;
-    /* moves note into view, without transform */
+    /* moves note into view */
     transform: translate3d(0, 0, 0);
 }
 
