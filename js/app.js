@@ -22,5 +22,4 @@ function toggleNote(e) {
 	e.preventDefault();
 	index = Number(e.target.text)-1;
 	internotes[index].classList.toggle('active');
-	internotes[index].classList.toggle('visible');
 }
