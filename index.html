@@ -13,8 +13,6 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/annotate.css">
 
-        <script src="js/modernizr.js"></script>
-        <script src="js/fastclick.js"></script>
         <script type="text/javascript" src="//use.typekit.net/qfa0uoo.js"></script>
         <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     </head>
@@ -24,8 +22,6 @@
         <![endif]-->
         <header>
             <div class="wrap">
-                <a href="#" class="btn" id="citation-toggle">Hide Notes</a>
-                <a href="#" class="btn" id="auto-toggle">Auto Open Notes</a>
                 <a href="mailto: amanda.n.krauss@gmail.com, jess.l.miner@gmail.com?subject=Women%20In%20Congress%20Play" class="btn">Contact us!</a>
             </div>
 
@@ -194,7 +190,7 @@
 
             <p class="dir">Woman One waves her beard in the air, still an eager beaver.</p>
 
-            &gt;WOMAN ONE
+            WOMAN ONE
             <p>(<em>proudly</em>) Heck-a-te yeah.<a href="#13" class="fn">13</a>The one I've got's real nice! </p>
 
             WOMAN TWO
@@ -3352,25 +3348,8 @@
       <!--   <footer>
         </footer> -->
 
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
-        <script src="js/annotate.js"></script>
-        <script>
-            $(document).footnote();
-        </script>
-        <script src="js/jquery-xscrolly.js"></script>
-        <script>
-            $('.fn').xscrolly({
-                throttle: 0,
-                offset: 250,
-                change: function($el) {
-                    if ($(document.documentElement).hasClass('autonote-on') && !$(document.documentElement).is('.notes-hidden') ) {
-                        $el.click();
-                    }
-                },
-            });
-        </script>
-        <script>
+        <script src="js/app.js"></script>
+        <!--script>
             //Fixes the orientation re-size bug
             $(document).ready(function() {
                 var metas = document.getElementsByTagName('meta');
@@ -3386,6 +3365,6 @@
                 }
                 }
             });
-    </script>
+    </script-->
     </body>
 </html>

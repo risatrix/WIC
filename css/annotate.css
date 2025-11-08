@@ -8,58 +8,25 @@
     font-style: normal;
     font-size: 14px;
     line-height: 1.4;
-    /*cadged from HTML5 boilerplate's visually hidden class*/
-    position: absolute;
-    overflow: hidden; 
+    /* cadged from HTML5 boilerplate's visually hidden class  -- not sure how necessary this is? */
     clip: rect(0 0 0 0); 
     padding: 0; 
     border: 0; 
     height: 0;
-    /*moves out of the way*/
-     right: -100%;
+    /* sets the stage for animating transforms */
+    transition: all 400ms ease-in;
+    /* sets initial position via transform */
+    transform: translate3d(200%, 0, 0);
 }
 
-/* moves note into view, without transform */
+
 .internote.active {
-    right: 0;
-}
-
-/* undoes two key selectors in keeping something vidsually hidden */
-.internote.active, .internote.visible {
-    position: static;
+    /* undoes selectors that keeps something visually hidden, possibly */
     height: auto;
+    /* moves note into view */
+    transform: translate3d(0, 0, 0);
 }
 
-/* sets the stage for a transform */
-.csstransforms3d.csstransitions .internote {
-    right: 0; 
-    -webkit-transform: translate3d(100%, 0, 0);
-    -moz-transform: translate3d(100%, 0, 0);
-    -ms-transform: translate3d(100%, 0, 0);
-    -o-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-    -webkit-transition: -webkit-transform 300ms ease-in-out;
-    -moz-transition: -moz-transform 300ms ease-in-out;
-    -o-transition: -o-transform 300ms ease-in-out;
-    transition: transform 300ms ease-in-out;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
-    -o-backface-visibility: hidden;
-    backface-visibility: hidden;
-	}
-
-/* moves note into view, with transform */
-.csstransforms3d.csstransitions.note-on .internote.active{
-    -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
-    -moz-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
-    -ms-transform: translate3d(0%, 0, 0) scale3d(1, 1, 1);
-    -o-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
-    -webkit-transition: -webkit-transform 300ms ease-in-out;
-    -moz-transition: -moz-transform 300ms ease-in-out;
-    -o-transition: -o-transform 300ms ease-in-out;
-    transition: transform 300ms ease-in-out;
-}
 
 /* Because the freight is a little much on desktop*/
 @media only screen and (min-width: 768px) {
