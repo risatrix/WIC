@@ -242,25 +242,21 @@ p {
 
 }
 
-/*to achieve under-comment wedge effect, transform needs to be available*/
-.csstransforms .fn:after {
+/* to under-note toggle wedge effect */
+.fn:after {
     content: " ";
     display: inline;
     position: absolute;
-    bottom: -3px;
-    right: .3em;
+    bottom: -6px;
+    right: .75em;
     width: 0;
     height: 0;
-    border: 2px solid transparent;
+    border: 6px solid transparent;
     border-right-width: 4px;
     border-top: 2px solid #dededc;
     border-left: 4px solid #dededc;
-    -webkit-transform: rotate(0.05deg);
-    -moz-transform: scale(1.1);
     transform: rotate(0.05deg);
 }
-
-
 
 .fn.active-note { background-color: rgb(51, 147, 192); }
 
@@ -274,10 +270,6 @@ p {
     background-color: rgb(51, 147, 192);
 }
 
-.csstransforms.no-touch .fn:hover:after {
-    border-top: 2px solid rgb(51, 147, 192);
-    border-left: 4px solid rgb(51, 147, 192);
-}
 
 
 .dir {
